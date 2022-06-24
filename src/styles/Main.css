@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #171e2b, #171e2be0);
+}
+
 .container {
     font-family: Roboto, sans-serif;
     /* background-image: linear-gradient(to bottom right, #171e2b, #171e2bf4); */
