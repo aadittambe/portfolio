@@ -9,7 +9,6 @@ import '../styles/Main.css'
 import { Routes, Route, Navigate } from 'react-router-dom'
 
 function Main() {
-    document.body.style.background = "rgb(23, 30, 43)";
     return (
         <div className='container'>
             {/* <Nav /> */}

@@ -5,6 +5,7 @@ import Main from './components/Main'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
+  document.body.style.background = "rgb(23, 30, 43)";
   return (
     <>
       <Helmet>
