@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Aadit's portfolio</title>
@@ -14,11 +14,13 @@ function App() {
         <meta name="Aadit Tambe" content="Aadit Tambe is a journalist and developer who tells data-driven stories visually — with code." />
 
       </Helmet>
+      <div className="App">
 
-      <BrowserRouter>
-        <Main />
-      </BrowserRouter>
-    </div>
+        <BrowserRouter>
+          <Main />
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 

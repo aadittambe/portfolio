@@ -2,10 +2,15 @@
 
 .container {
     font-family: Roboto, sans-serif;
-    background-image: linear-gradient(to bottom right, #171e2b, #171e2bf4);
-    height: 100vh;
+    /* background-image: linear-gradient(to bottom right, #171e2b, #171e2bf4); */
+    /* height: 100%; */
+    /* height: 100vh; */
     color: #f6f4e6;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    /* position: relative; */
+    /* padding: 50% 0% 50% 0%; */
 }
 
 ::selection {
@@ -35,5 +40,13 @@ footer,
     100% {
         opacity: 1;
         filter: blur(0px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        top: 0%;
+        transform: translate(0, 0);
+        padding: 10% 0% 10% 0%;
     }
 }

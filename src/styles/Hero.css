@@ -1,7 +1,7 @@
 .hero {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -55%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translate(0, -55%); */
     padding: 0% 10% 0% 10%;
 }
 
@@ -10,6 +10,7 @@ h1 {
     font-size: 60px;
     color: #edcf2e;
     font-weight: 900;
+    margin-top: 0px;
 
 }
 
