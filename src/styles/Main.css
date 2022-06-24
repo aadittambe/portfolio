@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container {
+    font-family: Roboto, sans-serif;
+    background-image: linear-gradient(to bottom right, #171e2b, #171e2bf4);
+    height: 100vh;
+    color: #f6f4e6;
+    position: relative;
+}
+
+::selection {
+    background: #41444b;
+}
+
+
+h1,
+p,
+li,
+a,
+footer,
+.icon {
+    animation: text-fade-in ease 3s;
+    -webkit-animation: text-fade-in ease 3s;
+    -moz-animation: text-fade-in ease 3s;
+    -o-animation: text-fade-in ease 3s;
+    -ms-animation: text-fade-in ease 3s;
+}
+
+@keyframes text-fade-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}

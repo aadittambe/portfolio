@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Helmet } from "react-helmet";
+import Main from './components/Main'
+
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Aadit's portfolio</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="Aadit Tambe" content="Aadit Tambe is a journalist and developer who tells data-driven stories visually — with code." />
+
+      </Helmet>
+
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
     </div>
   );
 }

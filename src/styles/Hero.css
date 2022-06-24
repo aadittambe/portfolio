@@ -1,0 +1,82 @@
+.hero {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -55%);
+    padding: 0% 10% 0% 10%;
+}
+
+
+h1 {
+    font-size: 60px;
+    color: #edcf2e;
+    font-weight: 900;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.typeit {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: #edcf2e;
+}
+
+.wave:hover {
+    cursor: default;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.icon {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    color: #f6f4e6;
+}
+
+.icon:hover {
+    transform: scale(1.25);
+    color: #edcf2e;
+}
