@@ -8,7 +8,7 @@ function Nav() {
         <div className='nav'>
             <ul>
                 <li>
-                    <Link to='/'>Click here for about</Link>
+                    <Link to='/experience'>Experience</Link>
                 </li>
                 <li>
                     <Link to='/resume'>resume</Link>
