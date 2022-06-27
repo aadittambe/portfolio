@@ -1,15 +1,25 @@
 import React from 'react';
+import '../styles/Experience.css'
+const data = require('../data/stories.json')
 
-function Resume() {
+function Experience() {
     return (
-        <div className='x'>
-            <h1><span className='wave'>🖋</span> <span className="typeit"></span>
+        <div className='experience'>
+            <h1>
+                Some projects I'm proud of
             </h1>
-            <p>I tell stories — but with code.</p>
-            <p>Simply put, I am a journalism and a programmer. I use my skills to identify data-driven stories, and present them in visual ways. Some newsroom call this data or graphics reporting, others call it news apps development.</p>
-            <p>Currently, I am an intern an intern in the graphics and design departments at The Washington Post. Previosuly, I was a data reporting fellow at the Howard Center for Investigative Journalism at the University of Maryland, and have interned at NBC News on the data and graphics team.</p>
+            <div className="layout">
+                <div className="col left">
+                    {data.map(d => (
+                        <p onMouseEnter={e => (document.getElementById("aadit").src = require(`../images/${d.img}`))}>{d.project}</p>//${d.img}
+                    ))}
+                </div>
+                <div className="col right">
+                    <img id="aadit" width={"100%"} src="https://cnsmaryland.org/interactives/fall2021/goucher-poll/illustrations/social-card-image.png" />
+                </div>
+            </div>
         </div>
     )
 }
 
-export default Resume;
+export default Experience;

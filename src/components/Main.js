@@ -11,8 +11,9 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 function Main() {
     return (
         <>
-            <Nav />
             <div className='container'>
+                <Nav />
+
 
                 <Routes>
                     <Route path='/' element={<Hero />} />
