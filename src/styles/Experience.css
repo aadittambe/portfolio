@@ -3,8 +3,20 @@
     box-sizing: border-box;
 }
 
-.left {
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.story {
+    background-color: green;
+    width: 300px;
+}
+
+/* .left {
     flex: 1;
+    overflow: auto;
 }
 
 .right {
@@ -15,4 +27,4 @@
     .layout {
         display: flex;
     }
-}
+} */
