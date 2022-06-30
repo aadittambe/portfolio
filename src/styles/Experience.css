@@ -1,17 +1,48 @@
 .experience {
-    padding: 0% 10% 0% 10%;
-    box-sizing: border-box;
+  padding: 0% 10% 0% 10%;
+  box-sizing: border-box;
 }
 
-.col {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around
+.experience a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .story {
-    background-color: green;
-    width: 300px;
+  background-color: green;
+  width: 300px;
+}
+
+.story-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-shadow: 0.1em 0.1em 1em 0.03em black;
+  margin-bottom: 20px;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.story-img:hover {
+  box-shadow: 0.1em 0.1em 1em 0.03em #edcf2e;
+  transform: scale(1.05);
+}
+
+.tools {
+  text-align: right;
+  font-size: x-small;
+}
+
+.story-org {
+  font-size: small;
 }
 
 /* .left {
