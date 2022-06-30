@@ -16,7 +16,8 @@ a:hover {
 }
 
 .story {
-  background-color: green;
+  margin: 2% 1% 2% 1%;
+  /* background-color: green; */
   width: 300px;
 }
 
@@ -36,14 +37,82 @@ a:hover {
   transform: scale(1.05);
 }
 
-.tools {
+
+.story p {
+  margin: 0px;
+}
+
+.story-name {
+  border-bottom: solid 0px #edcf2e;
+  transition: all .1s;
+}
+
+.story-name:hover {
+  border-bottom: solid 3px #edcf2e;
+}
+
+.story-tools {
   text-align: right;
-  font-size: x-small;
+  font-size: small;
+  padding-bottom: 2%;
 }
 
 .story-org {
-  font-size: small;
+  font-size: medium;
+  padding: 2% 0% 2% 0%;
 }
+
+.ital {
+  font-style: italic;
+}
+
+fieldset {
+  text-align: center;
+  border: none;
+  /* margin: none; */
+  padding: 0px;
+}
+
+.btn {
+  padding: 0% 1%;
+}
+
+.btn input {
+  display: none;
+}
+
+
+.btn span {
+  text-align: center;
+  border: 1.2px solid #52575d;
+  background-color: #f6f4e6;
+  color: #41444b;
+  padding: 6px 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0.2em 0em;
+  min-width: 96px;
+  max-width: 96px;
+}
+
+.btn span:hover {
+  background-color: #52575d;
+  color: #f6f4e6;
+}
+
+.btn input:checked+span {
+  background-color: #edcf2e;
+
+
+}
+
+.btn.reset span {
+  background-color: #edcf2e;
+  color: #52575d;
+}
+
 
 /* .left {
     flex: 1;
