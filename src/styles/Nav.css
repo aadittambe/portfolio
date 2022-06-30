@@ -1,13 +1,41 @@
-ul {
+.nav ul {
     text-align: right;
     margin: auto;
     padding-inline-start: 0px;
-    /* padding: 5% 10% 0% 0%; */
+    padding: 1% 0% 0% 0%;
+    margin-top: 0px;
 }
 
-li {
+.nav li {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(23, 30, 43);
     display: inline;
-    padding: 0% 0% 0% 2%;
+    padding: .5%;
+    background-color: gold;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+.nav li a {
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(23, 30, 43);
+    ;
+}
 
 
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding: 1% 10% 5% 10%;
+    }
+
+    .nav li {
+        display: block
+    }
+
+    .nav ul {
+        text-align: left;
+    }
 }
