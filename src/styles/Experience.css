@@ -1,5 +1,5 @@
 .experience {
-  padding: 0% 10% 0% 10%;
+  padding: 5% 10% 5% 10%;
   box-sizing: border-box;
 }
 
@@ -7,6 +7,18 @@
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.experience .intro a,
+.source a {
+  border-bottom: solid 1px #edcf2e;
+  transition: all .1s;
+}
+
+.experience .intro a:hover,
+.source a:hover {
+  border-bottom: solid 2px #edcf2e;
+  transition: all .1s;
 }
 
 .layout {

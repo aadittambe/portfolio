@@ -5,7 +5,11 @@ const data = require("../data/stories.json");
 function Experience() {
   return (
     <div className="experience">
-      <h1>Projects and such</h1>
+      <div className="intro">
+        <h1>🖥 Projects</h1>
+        <p>I specialize in telling data-driven stories visually, and my work helps people understand the news and make sense of the policies that impact them.</p>
+        <p>This page projects I have worked on for <a href="https://www.washingtonpost.com/">The Washington Post</a>, <a href="https://merrill.umd.edu/howard-center-for-investigative-journalism">the Howard Center for Investigative Journalism</a>, <a href="https://cnsmaryland.org/">Capital News Service</a>, <a href="https://www.nbcnews.com/datagraphics">NBC News</a>, <a href="https://dailyiowan.com/">The Daily Iowan</a>, as well as personal practice projects. </p>
+      </div>
       <fieldset className="btn-row">
         <legend>
           <p> 👀 Looking for a particular type of project? </p>
@@ -54,7 +58,7 @@ function Experience() {
           </div>
         ))}
       </div>
-      <div className="crap"></div>
+      <div className="source ital"><p>Psst! I am a fan of open-source code — the source code for this website is available on <a href="https://github.com/aadittambe/dot-com-two-point-o">GitHub</a>.</p></div>
     </div >
   );
 }

@@ -11,7 +11,7 @@ function Nav() {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/experience'>Experience</Link>
+                    <Link to='/experience'>Projects</Link>
                 </li>
                 <li>
                     <Link to='/resume'>Resume</Link>
