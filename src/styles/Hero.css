@@ -30,7 +30,7 @@ p {
     animation-name: wave-animation;
     animation-duration: 3.5s;
     animation-iteration-count: 1;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     transform-origin: 70% 70%;
     display: inline-block;
 }
@@ -44,9 +44,20 @@ p {
     display: inline-block;
 }
 
+.mob-jump {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .wave:hover {
         animation-iteration-count: 1;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .mob-jump {
+        display: block;
+        line-height: 0px;
     }
 }
 

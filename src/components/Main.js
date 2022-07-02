@@ -7,7 +7,7 @@ import Resume from './Resume'
 
 import '../styles/Main.css'
 
-import { Routes, Route } from 'react-router-dom' //navigate
+import { Routes, Route, Navigate } from 'react-router-dom' //navigate
 
 function Main() {
     return (
@@ -15,7 +15,7 @@ function Main() {
             <div className='container'>
                 <Nav />
                 <Routes>
-                    <Route path='*' element={<Hero />} />
+                    <Route path='*' element={<Navigate to="/" />} />
                     <Route path='/' element={<Hero />} />
                     <Route path='/experience' element={<Experience />} />
                     <Route path='/resume' element={<Resume />} />

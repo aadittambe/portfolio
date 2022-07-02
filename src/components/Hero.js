@@ -9,7 +9,7 @@ function Hero() {
     return (
         <div className='hero'>
             <h1><span className='wave'>👋🏽</span> Hi, I am Aadit!</h1>
-            <p><span style={{ display: "none" }}>👨🏽‍💻</span>I tell stories — but with <span className="typeit">
+            <p><span style={{ display: "none" }}>👨🏽‍💻</span>I tell stories — but with<span className='mob-jump'><br /></span> <span className="typeit">
                 <TypeIt
                     options={{
                         loop: true,
@@ -19,7 +19,7 @@ function Hero() {
                     }}
                     getBeforeInit={(instance) => {
                         instance
-                            .pause(3500)
+                            .pause(1500)
                             .type("code. 🖥")
                             .pause(2000)
                             .delete(7)
