@@ -44,7 +44,7 @@ function Experience() {
       <div className="layout">
         {data.map((d, i) => (
           <div className={`story ${d.storyType}`} key={i}>
-            <a href={`../images/tracker.png`}>
+            <a href={d.url} rel="noreferrer" target="_blank">
               <p className="story-tools">🧰 {d.tools}</p>
               <img
                 src={d.img.startsWith("https") ? d.img : require(`../images/${d.img}?.jpeg`)}
