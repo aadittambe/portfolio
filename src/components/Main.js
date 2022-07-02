@@ -15,6 +15,7 @@ function Main() {
             <div className='container'>
                 <Nav />
                 <Routes>
+                    <Route path='*' element={<Hero />} />
                     <Route path='/' element={<Hero />} />
                     <Route path='/experience' element={<Experience />} />
                     <Route path='/resume' element={<Resume />} />
