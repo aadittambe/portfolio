@@ -24,9 +24,13 @@
     font-weight: 800;
     text-decoration: none;
     color: rgb(23, 30, 43);
-    ;
 }
 
+.nav li a:hover {
+    border-color: #f6f4e6;
+    background-color: #f6f4e6;
+    color: rgb(23, 30, 43);
+}
 
 @media only screen and (max-width: 600px) {
     .nav {

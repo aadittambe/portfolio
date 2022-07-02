@@ -11,8 +11,10 @@ a:hover {
 
 .experience .intro a,
 .source a {
+  text-decoration: none;
   border-bottom: solid 1px #edcf2e;
   transition: all .1s;
+  color: #edcf2e;
 }
 
 .experience .intro a:hover,

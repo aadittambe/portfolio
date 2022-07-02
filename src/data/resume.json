@@ -89,10 +89,10 @@
             "name": "News Gathering",
             "tools": [
                 "Public records negotiation",
-                "web scraping",
+                "Web scraping",
                 "Tabula",
-                "cron jobs",
-                "shell scripting",
+                "Cron jobs",
+                "Shell scripting",
                 "GitHub Actions"
             ]
         },

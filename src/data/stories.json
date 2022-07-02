@@ -1,5 +1,14 @@
 [
     {
+        "project": "How the Supreme Court ruled in the major decisions of 2022",
+        "url": "https://www.washingtonpost.com/politics/interactive/2022/significant-supreme-court-decisions-2022/",
+        "org": "The Washington Post",
+        "img": "scotus.png",
+        "storyType": "graphics",
+        "tools": "#html #css #javascript",
+        "imgAlt": "Screenshot of a graphic with how justices voted in abortion case."
+    },
+    {
         "project": "News App: Missing Migrants",
         "url": "https://github.com/aadittambe/migrants/",
         "org": "Personal project",

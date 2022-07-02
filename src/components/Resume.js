@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/Resume.css'
-// import { Container, Row, Col } from 'react-bootstrap';
+import Pdf from '../docs/AaditTambe_Resume.pdf';
 const data = require("../data/resume.json");
 
 const work = data.work
@@ -11,7 +11,10 @@ console.log(skills)
 function Resume() {
     return (
         <div className="resume">
-            <h1><span className="wave">📝</span> Resume</h1>
+            <h1>📝 Resume</h1>
+            <div className="ital source">
+                <p >And <a href={Pdf} rel="noreferrer" target="_blank">here's</a> a PDF, if that's what you're looking for.</p>
+            </div>
             <div className="section">
                 <h2>💼 Work experience</h2>
                 {work.map((d, i) => (
