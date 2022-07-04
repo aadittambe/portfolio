@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 $(function () {
   $("#graphics").click(function () {
+    console.log('graphics clicked')
     $(".app").hide()
     $(".data").hide()
     $(".text").hide()
