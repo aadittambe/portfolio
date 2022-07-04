@@ -1,8 +1,65 @@
 import React from "react";
+import $ from 'jquery';
 import "../styles/Experience.css";
-const data = require("../data/stories.json");
+let data = require("../data/stories.json");
 
 function Experience() {
+  $(function () {
+    $("#graphics").click(function () {
+      $(".app").hide()
+      $(".data").hide()
+      $(".text").hide()
+      $(".graphics").show()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
+    $("#data").click(function () {
+      $(".app").hide()
+      $(".graphics").hide()
+      $(".text").hide()
+      $(".data").show()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
+    $("#text").click(function () {
+      $(".app").hide()
+      $(".graphics").hide()
+      $(".data").hide()
+      $(".text").show()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
+    $("#app").click(function () {
+      $(".text").hide()
+      $(".graphics").hide()
+      $(".data").hide()
+      $(".app").show()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
+    $("#docs").click(function () {
+      $(".text").hide()
+      $(".graphics").hide()
+      $(".data").hide()
+      $(".app").hide()
+      $(".docs").show()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
+    $("#reset").click(function () {
+      $(".text").show()
+      $(".graphics").show()
+      $(".data").show()
+      $(".app").show()
+      $(".docs").show()
+      $(".btn.reset span").css("background-color", "#fddb3a")
+    });
+  })
+
   return (
     <div className="experience">
       <div className="intro">
