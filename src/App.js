@@ -15,10 +15,10 @@ function App() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Aadit's portfolio</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta name="Aadit Tambe" content="Aadit Tambe is a journalist and developer who tells data-driven stories visually — with code." />
-
+        <title>Aadit Tambe's portfolio</title>
+        <link rel="canonical" href="https://aadittambe.com/" />
+        <meta name="description" content="Aadit Tambe is a journalist and developer who tells data-driven stories visually — with code." />
+        <meta name="author" content='Aadit Tambe' />
       </Helmet>
       <div className="App">
 
