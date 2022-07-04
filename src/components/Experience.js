@@ -1,7 +1,7 @@
 import React from "react";
 import $ from 'jquery';
 import "../styles/Experience.css";
-let data = require("../data/stories.json");
+const data = require("../data/stories.json");
 
 function Experience() {
   $(function () {
