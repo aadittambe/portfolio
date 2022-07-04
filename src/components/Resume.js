@@ -7,7 +7,7 @@ const work = data.work
 const ed = data.ed
 const skills = data.skills
 
-console.log(skills)
+// console.log(skills)
 function Resume() {
     return (
         <div className="resume">
