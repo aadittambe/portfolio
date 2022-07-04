@@ -23,7 +23,7 @@ function Nav() {
                 </li>
             </ul>
             <Routes>
-                <Route path='*' element={<Navigate to="/" />} />
+                <Route path='*' element={<Navigate to="/" replace />} />
                 <Route path='/' element={<Hero />} />
                 <Route path='/experience' element={<Experience />} />
                 <Route path='/resume' element={<Resume />} />
