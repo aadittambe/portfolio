@@ -1,129 +1,129 @@
 {
-    "work": [
-        {
-            "org": "The Washington Post",
-            "dates": "June 2022 – Present",
-            "title": "Design and Graphics Intern",
-            "desc": "",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "🗞"
-        },
-        {
-            "org": " Howard Center for Investigative Journalism",
-            "dates": "January 2021 – Present",
-            "title": "Fellow, Data Reporter",
-            "desc": "Run advanced data analyses in R and Python to develop promising leads and story ideas. File public records requests to gather data. Script, design and program graphics to supplement storytelling.",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "🕵🏽‍♂️"
-        },
-        {
-            "org": " Capital News Service",
-            "dates": "August 2021 – December 2021",
-            "title": "Data and Graphics Reporter",
-            "desc": "Designed graphics and programmed interactive maps and visualizations. Built Python web scrapers to automate data collection. Created news apps and long-form web presentations to deliver data-driven stories in engaging ways.",
-            "link": "https://www.washingtonpost.com/"
-        },
-        {
-            "org": "NBC News",
-            "dates": "June 2021 – August 2021",
-            "title": "Data Graphics Intern",
-            "desc": "Pitched, reported and wrote data-driven stories. Analyzed data sets to develop story ideas. Built engaging charts, maps and graphics for stories to explain the news visually.",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "📺"
-        },
-        {
-            "org": "Office of Strategic Communications, U-Md",
-            "dates": "August 2020 – June 2021",
-            "title": "Graduate Assistant",
-            "desc": "Identified, reported and wrote stories in innovative and narrative styles for Maryland Today, the university’s daily information website. Contributed news stories and feature profiles to Terp, a tri-annual, award-winning alumni magazine.",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "📝"
-        },
-        {
-            "org": "The Daily Iowan",
-            "dates": "August 2019 – May 2020",
-            "title": "Managing Digital Editor",
-            "desc": "Led a team of 10 digital producers to monitor a website with a daily audience of 5,000 visitors, managed social media platforms to increase Facebook engagement by 21 percent and Twitter engagement by 10 percent. Redesigned the DI’s website, and pushed for a digital-first mindset in the newsroom.",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "📰"
-        },
-        {
-            "org": "UI School of Journalism and Mass Comm.",
-            "dates": "August 2018 – May 2020",
-            "title": "Student Ambassador",
-            "desc": "Conducted tours of the journalism school and talk to prospective students about studying journalism. Redesigned the Iowa Summer Journalism Workshop website.",
-            "link": "https://www.washingtonpost.com/",
-            "emoji": "🎓"
-        }
-    ],
-    "ed": [
-        {
-            "school": "University of Maryland",
-            "degree": "Master's in Journalism",
-            "focus": "Data Journalism Focus",
-            "year": "May 2022",
-            "gpa": "3.9"
-        },
-        {
-            "school": "University of Iowa",
-            "degree": "B.A. Journalism and Mass Communication",
-            "focus": "German Minor",
-            "year": "May 2020",
-            "gpa": "3.7"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Data Analysis",
-            "tools": [
-                "Python",
-                "pandas",
-                "SQL",
-                "R",
-                "Excel",
-                "Google Sheets",
-                "OpenRefine"
-            ]
-        },
-        {
-            "name": "News Gathering",
-            "tools": [
-                "Public records negotiation",
-                "Web scraping",
-                "Tabula",
-                "Cron jobs",
-                "Shell scripting",
-                "GitHub Actions"
-            ]
-        },
-        {
-            "name": "Design + Visualization",
-            "tools": [
-                "D3",
-                "Illustrator",
-                "InDesign",
-                "Leaflet",
-                "Photoshop",
-                "ai2html",
-                "QGIS",
-                "Mapbox",
-                "Flourish",
-                "Datawrapper"
-            ]
-        },
-        {
-            "name": "Web Development",
-            "tools": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Flask",
-                "Grunt",
-                "Node.js",
-                "jQuery",
-                "Bootstrap"
-            ]
-        }
-    ]
+  "work": [
+    {
+      "org": "The Washington Post",
+      "dates": "June 2022 – Present",
+      "title": "Design and Graphics Intern",
+      "desc": "",
+      "link": "https://www.washingtonpost.com/",
+      "emoji": "🗞"
+    },
+    {
+      "org": " Howard Center for Investigative Journalism",
+      "dates": "January 2021 – Present",
+      "title": "Fellow, Data Reporter",
+      "desc": "Run advanced data analyses in R and Python to develop promising leads and story ideas. File public records requests to gather data. Script, design and program graphics to supplement storytelling.",
+      "link": "https://merrill.umd.edu/howard-center-for-investigative-journalism",
+      "emoji": "🕵🏽‍♂️"
+    },
+    {
+      "org": " Capital News Service",
+      "dates": "August 2021 – December 2021",
+      "title": "Data and Graphics Reporter",
+      "desc": "Designed graphics and programmed interactive maps and visualizations. Built Python web scrapers to automate data collection. Created news apps and long-form web presentations to deliver data-driven stories in engaging ways.",
+      "link": "https://cnsmaryland.org/"
+    },
+    {
+      "org": "NBC News",
+      "dates": "June 2021 – August 2021",
+      "title": "Data Graphics Intern",
+      "desc": "Pitched, reported and wrote data-driven stories. Analyzed data sets to develop story ideas. Built engaging charts, maps and graphics for stories to explain the news visually.",
+      "link": "https://www.nbcnews.com/datagraphics",
+      "emoji": "📺"
+    },
+    {
+      "org": "Office of Strategic Communications, U-Md",
+      "dates": "August 2020 – June 2021",
+      "title": "Graduate Assistant",
+      "desc": "Identified, reported and wrote stories in innovative and narrative styles for Maryland Today, the university’s daily information website. Contributed news stories and feature profiles to Terp, a tri-annual, award-winning alumni magazine.",
+      "link": "https://today.umd.edu/",
+      "emoji": "📝"
+    },
+    {
+      "org": "The Daily Iowan",
+      "dates": "August 2019 – May 2020",
+      "title": "Managing Digital Editor",
+      "desc": "Led a team of 10 digital producers to monitor a website with a daily audience of 5,000 visitors, managed social media platforms to increase Facebook engagement by 21 percent and Twitter engagement by 10 percent. Redesigned the DI’s website, and pushed for a digital-first mindset in the newsroom.",
+      "link": "https://dailyiowan.com/",
+      "emoji": "📰"
+    },
+    {
+      "org": "UI School of Journalism and Mass Comm.",
+      "dates": "August 2018 – May 2020",
+      "title": "Student Ambassador",
+      "desc": "Conducted tours of the journalism school and talk to prospective students about studying journalism. Redesigned the Iowa Summer Journalism Workshop website.",
+      "link": "https://journalism.uiowa.edu/",
+      "emoji": "🎓"
+    }
+  ],
+  "ed": [
+    {
+      "school": "University of Maryland",
+      "degree": "Master's in Journalism",
+      "focus": "Data Journalism Focus",
+      "year": "May 2022",
+      "gpa": "3.9"
+    },
+    {
+      "school": "University of Iowa",
+      "degree": "B.A. Journalism and Mass Communication",
+      "focus": "German Minor",
+      "year": "May 2020",
+      "gpa": "3.7"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Analysis",
+      "tools": [
+        "Python",
+        "pandas",
+        "SQL",
+        "R",
+        "Excel",
+        "Google Sheets",
+        "OpenRefine"
+      ]
+    },
+    {
+      "name": "News Gathering",
+      "tools": [
+        "Public records negotiation",
+        "Web scraping",
+        "Tabula",
+        "Cron jobs",
+        "Shell scripting",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Design + Visualization",
+      "tools": [
+        "D3",
+        "Illustrator",
+        "InDesign",
+        "Leaflet",
+        "Photoshop",
+        "ai2html",
+        "QGIS",
+        "Mapbox",
+        "Flourish",
+        "Datawrapper"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "tools": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Flask",
+        "Grunt",
+        "Node.js",
+        "jQuery",
+        "Bootstrap"
+      ]
+    }
+  ]
 }
