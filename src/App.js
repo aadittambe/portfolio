@@ -10,7 +10,7 @@ function App() {
   const TRACKING_ID = "UA-157385072-1";
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview("/")
-  document.body.style.background = "rgb(23, 30, 43)";
+  // document.body.style.background = "rgb(23, 30, 43)";
   return (
     <>
       <Helmet>

@@ -115,7 +115,7 @@ function Experience() {
           </div>
         ))}
       </div>
-      <div className="source ital"><p>Psst! I am a fan of open-source code — the source code for this website is available on <a href="https://github.com/aadittambe/dot-com-two-point-o">GitHub</a>.</p></div>
+      <div className="source ital"><p>I am a supporter of open-source code — the source code for this website is available on <a href="https://github.com/aadittambe/dot-com-two-point-o">GitHub</a>.</p></div>
     </div >
   );
 }
