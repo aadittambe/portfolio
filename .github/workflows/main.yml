@@ -21,7 +21,7 @@ jobs:
         cache: 'pipenv'
     - run: pipenv install --python `which python`
     - name: install library
-      run: pipenv install requests
+      run: python pipenv install requests
     - name: get-contributions
       shell: bash
       env:
