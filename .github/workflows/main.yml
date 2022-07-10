@@ -22,7 +22,7 @@ jobs:
     - name: get-contribs
       shell: bash
       env:
-        API_TOKEN: ${{ secrets.API_TOKEN }}
+        API_KEY: ${{ secrets.API_KEY }}
       run: python gh-contribs/get.py
     - name: add and commit	
       run: |-	
