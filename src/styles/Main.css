@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    /* border: solid #edcf2e 10px; */
+    /* background-image: linear-gradient(to bottom right, #171e2b, #171e2be9); */
 
+    /* border: solid #edcf2e 10px; */
+    background-color: #edcf2e;
 }
 
 .container {
     min-height: 100vh;
-    border-width: 10px;
+    border-width: 5px;
     border-style: solid;
     border-color: #edcf2e;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #171e2b, #2b313b);
     /* min-height: 100%;
     border: solid #edcf2e 10px; */
     font-family: Roboto, sans-serif;
