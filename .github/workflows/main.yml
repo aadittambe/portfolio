@@ -8,6 +8,9 @@ on:
 jobs:
   get-contributions:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: gh-contribs
     steps:
     - uses: actions/checkout@v2
     - name: install pipenv
@@ -21,7 +24,7 @@ jobs:
       shell: bash
       env:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-      run: python gh-contribs/get.py
+      run: python get.py
     - name: add and commit	
       run: |-	
         git add .	
