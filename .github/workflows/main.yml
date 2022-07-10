@@ -24,7 +24,7 @@ jobs:
       shell: bash
       env:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-      run: pipenv python get.py
+      run: python get.py
     - name: add and commit	
       run: |-	
         git add .	
