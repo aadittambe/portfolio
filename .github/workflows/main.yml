@@ -21,7 +21,7 @@ jobs:
       shell: bash
       env:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-      run: python get.py
+      run: python gh-contribs/get.py
     - name: add and commit	
       run: |-	
         git add .	
