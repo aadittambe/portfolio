@@ -20,13 +20,11 @@ jobs:
         python-version: '3.9'
         cache: 'pipenv'
     - run: pipenv install --python `which python`
-    - name: install library
-      run: python pipenv install requests
     - name: get-contributions
       shell: bash
       env:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-      run: python get.py
+      run: pipenv get.py
     - name: add and commit	
       run: |-	
         git add .	
