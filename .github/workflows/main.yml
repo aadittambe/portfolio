@@ -12,18 +12,14 @@ jobs:
       run:
         working-directory: gh-contribs
     steps:
-    - uses: actions/checkout@v2
-    - name: install pipenv
-      run: pipx install pipenv
-    - uses: actions/setup-python@v2
+    - name: set up Python
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
-        cache: 'pipenv'
-    - run: pipenv install --python `which python`
-    - name: get-contributions
-      shell: bash
-      env:
-        API_TOKEN: ${{ secrets.API_TOKEN }}
+        python-version: '3.x'
+    - name: install reqs
+      run: python -m pip install requests
+    - uses: actions/checkout@v2
+    - name: get-contribs
       run: python get.py
     - name: add and commit	
       run: |-	
