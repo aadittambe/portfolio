@@ -39,5 +39,5 @@ req = requests.post(
 )
 
 
-with open('contribs.json', 'w') as f:
+with open('gh-contribs/contribs.json', 'w') as f:
     f.write(req.text)

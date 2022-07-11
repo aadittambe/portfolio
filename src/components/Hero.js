@@ -8,7 +8,7 @@ import { faTwitter, faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg
 
 function Hero() {
     d3.json("https://raw.githubusercontent.com/aadittambe/dot-com-two-point-o/main/gh-contribs/contribs.json").then(function (json) {
-        console.log(json);
+        // console.log(json);
         var content = json.data.user.contributionsCollection.contributionCalendar.weeks
         // console.log(content);
         let data = {}
