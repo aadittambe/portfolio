@@ -4,7 +4,7 @@
     "url": "https://www.washingtonpost.com/politics/interactive/2022/cassidy-hutchinson-jan-6-hearing-testimony-illustrated/",
     "org": "The Washington Post",
     "img": "hutchinson.png",
-    "storyType": "",
+    "storyType": "design",
     "tools": "#react #javascript",
     "imgAlt": "The topper image on the project, showing screenshots from the comic."
   },
