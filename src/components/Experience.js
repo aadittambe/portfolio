@@ -6,6 +6,7 @@ const data = require("../data/stories.json");
 function Experience() {
   $(function () {
     $("#graphics").click(function () {
+      $(".design").hide()
       $(".app").hide()
       $(".data").hide()
       $(".text").hide()
@@ -15,6 +16,7 @@ function Experience() {
     });
 
     $("#data").click(function () {
+      $(".design").hide()
       $(".app").hide()
       $(".graphics").hide()
       $(".text").hide()
@@ -24,6 +26,7 @@ function Experience() {
     });
 
     $("#text").click(function () {
+      $(".design").hide()
       $(".app").hide()
       $(".graphics").hide()
       $(".data").hide()
@@ -33,6 +36,7 @@ function Experience() {
     });
 
     $("#app").click(function () {
+      $(".design").hide()
       $(".text").hide()
       $(".graphics").hide()
       $(".data").hide()
@@ -42,6 +46,7 @@ function Experience() {
     });
 
     $("#docs").click(function () {
+      $(".design").hide()
       $(".text").hide()
       $(".graphics").hide()
       $(".data").hide()
@@ -51,6 +56,7 @@ function Experience() {
     });
 
     $("#reset").click(function () {
+      $(".design").hide()
       $(".text").show()
       $(".graphics").show()
       $(".data").show()
