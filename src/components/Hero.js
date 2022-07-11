@@ -107,8 +107,7 @@ function Hero() {
                     }}
                 /></span></p>
             <p>Simply put, I am a journalist and a programmer. I use my skills to identify data-driven stories, and present them in visual ways. </p>
-            <p>Currently, I am a graphics and design intern at The Washington Post. Previosuly, I was a data reporting fellow at the Howard Center for Investigative Journalism at the University of Maryland, and have interned at NBC News on the data and graphics team. </p>
-            <p>Sometimes I code for fun on GitHub, where my code contributions in the last year look like this <span id='sparklines'></span>.</p>
+            <p>Currently, I am a graphics and design intern at The Washington Post. Previosuly, I was a data reporting fellow at the Howard Center for Investigative Journalism at the University of Maryland, and have interned at NBC News on the data and graphics team. My code contributions on GitHub in the last year look like this <span id='sparklines'></span>.</p>
             <p>If you like to keep up with current events and care about the news — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!</p>
             <a href='https://twitter.com/aadittambe/' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
