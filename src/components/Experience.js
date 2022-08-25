@@ -55,8 +55,18 @@ function Experience() {
       $(".btn.reset span").css("background-color", "#f6f4e6")
     });
 
+    $("#design").click(function () {
+      $(".design").show()
+      $(".text").hide()
+      $(".graphics").hide()
+      $(".data").hide()
+      $(".app").hide()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
     $("#reset").click(function () {
-      $(".design").hide()
+      $(".design").show()
       $(".text").show()
       $(".graphics").show()
       $(".data").show()
@@ -83,16 +93,16 @@ function Experience() {
             <span>🌎<br></br>All</span>
           </label>
           <label className="btn">
-            <input type="radio" name="storyType" value="text" id="text" />
-            <span>✍️<br></br>Written</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="data" id="data" />
-            <span>📈<br></br>Data-driven</span>
+            <input type="radio" name="storyType" value="app" id="design" />
+            <span>🎨<br></br>Design</span>
           </label>
           <label className="btn">
             <input type="radio" name="storyType" value="graphics" id="graphics" />
             <span>🗺<br></br>Graphics</span>
+          </label>
+          <label className="btn">
+            <input type="radio" name="storyType" value="data" id="data" />
+            <span>📈<br></br>Data-driven</span>
           </label>
           <label className="btn">
             <input type="radio" name="storyType" value="app" id="app" />
@@ -101,6 +111,10 @@ function Experience() {
           <label className="btn">
             <input type="radio" name="storyType" value="app" id="docs" />
             <span>📖<br></br>Docs</span>
+          </label>
+          <label className="btn">
+            <input type="radio" name="storyType" value="text" id="text" />
+            <span>✍️<br></br>Written</span>
           </label>
         </p>
       </fieldset>

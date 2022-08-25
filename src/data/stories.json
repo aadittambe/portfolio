@@ -1,5 +1,41 @@
 [
   {
+    "project": "See the ads Democrats are funding to boost far-right Republicans",
+    "url": "https://www.washingtonpost.com/politics/interactive/2022/democrat-ad-spending-republican-trump/",
+    "org": "The Washington Post",
+    "img": "meddling.jpg",
+    "storyType": "design",
+    "tools": "#react #javascript #newswriting",
+    "imgAlt": "A composite of still images from ads Democrats aired boosting far-right Republicans."
+  },
+  {
+    "project": "More than 840 suspects have been charged in the Jan. 6 Capitol riot",
+    "url": "https://www.washingtonpost.com/national-security/interactive/2022/jan-6-capitol-riot-charges-sentences/",
+    "org": "The Washington Post",
+    "img": "jan6.jpg",
+    "storyType": "graphics",
+    "tools": "#react #d3 #scrolly",
+    "imgAlt": "An illustration showing icons of people in front of the U.S. Capitol."
+  },
+  {
+    "project": "Art of dissent: How Russians protest the war on Ukraine",
+    "url": "https://www.washingtonpost.com/world/interactive/2022/russia-ukraine-protest-art/",
+    "org": "The Washington Post",
+    "img": "russia.jpg",
+    "storyType": "design",
+    "tools": "#react #javascript",
+    "imgAlt": "Two women protesting Russia's war against Ukraine."
+  },
+  {
+    "project": "7 LGBTQ comic artists share how they navigate their identity",
+    "url": "https://www.washingtonpost.com/lifestyle/interactive/2022/lgbtq-comic-artists-identity",
+    "org": "The Washington Post",
+    "img": "comics.jpg",
+    "storyType": "design",
+    "tools": "#react #javascript",
+    "imgAlt": "One of the comics from the project."
+  },
+  {
     "project": "Visual: Cassidy Hutchinson’s testimony from the Jan. 6 hearing",
     "url": "https://www.washingtonpost.com/politics/interactive/2022/cassidy-hutchinson-jan-6-hearing-testimony-illustrated/",
     "org": "The Washington Post",
