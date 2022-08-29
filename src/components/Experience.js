@@ -15,6 +15,16 @@ function Experience() {
       $(".btn.reset span").css("background-color", "#f6f4e6")
     });
 
+    $("#design").click(function () {
+      $(".design").show()
+      $(".app").hide()
+      $(".data").hide()
+      $(".text").hide()
+      $(".graphics").hide()
+      $(".docs").hide()
+      $(".btn.reset span").css("background-color", "#f6f4e6")
+    });
+
     $("#data").click(function () {
       $(".design").hide()
       $(".app").hide()
@@ -55,15 +65,6 @@ function Experience() {
       $(".btn.reset span").css("background-color", "#f6f4e6")
     });
 
-    $("#design").click(function () {
-      $(".design").show()
-      $(".text").hide()
-      $(".graphics").hide()
-      $(".data").hide()
-      $(".app").hide()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
 
     $("#reset").click(function () {
       $(".design").show()
