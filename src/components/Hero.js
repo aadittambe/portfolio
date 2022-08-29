@@ -79,7 +79,7 @@ function Hero() {
     })
     return (
 
-        <div className='hero'>
+        <main className='hero'>
             <h1><span className='wave'>👋🏽</span> Hi, I am Aadit!</h1>
             <p><span style={{ display: "none" }}>👨🏽‍💻</span>I tell stories — but with<span className='mob-jump'><br /></span> <span className="typeit">
                 <TypeIt
@@ -122,7 +122,7 @@ function Hero() {
             <a href='mailto:aadit.tambe@gmail.com' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faEnvelope} size='2x' />
             </a>
-        </div>)
+        </main>)
 }
 
 export default Hero;

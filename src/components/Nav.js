@@ -9,21 +9,6 @@ import '../styles/Nav.css'
 
 function Nav() {
 
-    // $(function () {
-    //     $("#nav-home").click(function () {
-    //         $("li").removeClass("active")
-    //         $("#nav-home").addClass("active")
-    //     })
-    //     $("#nav-experience").click(function () {
-    //         $("li").removeClass("active")
-    //         $("#nav-experience").addClass("active")
-    //     })
-    //     $("#nav-resume").click(function () {
-    //         $("li").removeClass("active")
-    //         $("#nav-resume").addClass("active")
-    //     })
-    // })
-
     return (
         <>
             <header>

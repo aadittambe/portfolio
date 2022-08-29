@@ -78,7 +78,7 @@ function Experience() {
   })
 
   return (
-    <div className="experience">
+    <main className="experience">
       <div className="intro">
         <h1>🖥 Projects</h1>
         <p>I specialize in telling data-driven stories visually, and my work helps people understand the news and make sense of the policies that impact them.</p>
@@ -137,7 +137,7 @@ function Experience() {
         ))}
       </div>
       <div className="source ital"><p>I am a supporter of open-source code — the source code for this website is available on <a href="https://github.com/aadittambe/dot-com-two-point-o">GitHub</a>.</p></div>
-    </div >
+    </main >
   )
 }
 
