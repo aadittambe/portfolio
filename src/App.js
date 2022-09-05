@@ -20,12 +20,12 @@ function App() {
         <meta name="description" content="Aadit Tambe is a journalist and developer who tells data-driven stories visually — with code." />
         <meta name="author" content='Aadit Tambe' />
       </Helmet>
-      <div className="App">
+      {/* <div className="App"> */}
 
-        <BrowserRouter>
-          <Main />
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
+      {/* </div> */}
     </>
   );
 }

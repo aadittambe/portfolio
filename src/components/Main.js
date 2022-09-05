@@ -11,10 +11,10 @@ import '../styles/Main.css'
 function Main() {
     return (
         <>
-            <div className='container'>
-                <Nav />
-                <Footer />
-            </div>
+            {/* <div id='container'> */}
+            <Nav />
+            <Footer />
+            {/* </div> */}
         </>
     )
 }

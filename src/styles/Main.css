@@ -7,7 +7,7 @@ body {
     /* background-color: #edcf2e; */
 }
 
-.container {
+#container {
     min-height: 100vh;
     border-width: 5px;
     border-style: solid;
@@ -69,7 +69,7 @@ footer,
         font-size: xx-large;
     }
 
-    .container {
+    #container {
         top: 0%;
         transform: translate(0, 0);
         padding: 10% 0% 10% 0%;
