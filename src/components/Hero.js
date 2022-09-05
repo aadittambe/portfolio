@@ -25,7 +25,7 @@ function Hero() {
             return data
         })
         data = Object.values(data).map(d => +d);
-        console.log(data);
+        // console.log(data);
         const width = 100;
         const height = 20;
         const margin = { top: 2, right: 2, bottom: 2, left: 2 };
