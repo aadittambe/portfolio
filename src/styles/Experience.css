@@ -111,21 +111,22 @@ fieldset {
   max-width: 96px;
 }
 
+/* 
 .btn span:hover {
   background-color: #52575d;
   color: #f6f4e6;
-}
+} */
 
-.btn input:checked+span {
+/* .btn input:checked+span {
   background-color: #edcf2e;
 
 
-}
+} */
 
-.btn.reset span {
+/* .btn.reset span {
   background-color: #edcf2e;
   color: #52575d;
-}
+} */
 
 
 /* .left {
