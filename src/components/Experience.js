@@ -1,126 +1,38 @@
-import React from "react";
-import $ from 'jquery';
+import React, { useState } from "react";
 import "../styles/Experience.css";
 const data = require("../data/stories.json");
 
 function Experience() {
-  $(function () {
-    $("#graphics").click(function () {
-      $(".design").hide()
-      $(".app").hide()
-      $(".data").hide()
-      $(".text").hide()
-      $(".graphics").show()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
 
-    $("#design").click(function () {
-      $(".design").show()
-      $(".app").hide()
-      $(".data").hide()
-      $(".text").hide()
-      $(".graphics").hide()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
+  const categories = [{ topic: "Design", class: "design", emoji: "🎨" }, { topic: "Graphics", class: "graphics", emoji: "📊" }, { topic: "Data-driven", class: "data", emoji: "📈" }, { topic: "News app", class: "app", emoji: "🖥" }, { topic: "Docs", class: "docs", emoji: "📖" }, { topic: "Written", class: "text", emoji: "✍️" }]
 
-    $("#data").click(function () {
-      $(".design").hide()
-      $(".app").hide()
-      $(".graphics").hide()
-      $(".text").hide()
-      $(".data").show()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
-
-    $("#text").click(function () {
-      $(".design").hide()
-      $(".app").hide()
-      $(".graphics").hide()
-      $(".data").hide()
-      $(".text").show()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
-
-    $("#app").click(function () {
-      $(".design").hide()
-      $(".text").hide()
-      $(".graphics").hide()
-      $(".data").hide()
-      $(".app").show()
-      $(".docs").hide()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
-
-    $("#docs").click(function () {
-      $(".design").hide()
-      $(".text").hide()
-      $(".graphics").hide()
-      $(".data").hide()
-      $(".app").hide()
-      $(".docs").show()
-      $(".btn.reset span").css("background-color", "#f6f4e6")
-    });
-
-
-    $("#reset").click(function () {
-      $(".design").show()
-      $(".text").show()
-      $(".graphics").show()
-      $(".data").show()
-      $(".app").show()
-      $(".docs").show()
-      $(".btn.reset span").css("background-color", "#fddb3a")
-    });
-  })
+  const [clicked, setClicked] = useState("all")
 
   return (
     <main className="experience">
       <div className="intro">
         <h1>🖥 Projects</h1>
         <p>I specialize in telling data-driven stories visually, and my work helps people understand the news and make sense of the policies that impact them.</p>
-        <p>This page includes projects I have worked on for <a href="https://www.washingtonpost.com/">The Washington Post</a>, <a href="https://merrill.umd.edu/howard-center-for-investigative-journalism">the Howard Center for Investigative Journalism</a>, <a href="https://cnsmaryland.org/">Capital News Service</a>, <a href="https://www.nbcnews.com/datagraphics">NBC News</a>, <a href="https://dailyiowan.com/">The Daily Iowan</a>, as well as personal practice projects. </p>
+        <p>This page includes projects I have worked on for <a href="https://www.washingtonpost.com/">The Washington Post</a>, <a href="https://merrill.umd.edu/howard-center-for-investigative-journalism">the Howard Center for Investigative Journalism</a>, <a href="https://cnsmaryland.org/">Capital News Service</a>, <a href="https://www.nbcnews.com/datagraphics">NBC News</a>, <a href="https://dailyiowan.com/">The Daily Iowan</a>, as well as personal practice projects. My work demonstrates my commitment to figuring out programming concepts I may not know.</p>
       </div>
       <fieldset className="btn-row">
         <legend>
           <p> 👀 Looking for a particular type of project? </p>
         </legend>
         <p className="filters">
-          <label className="btn reset">
-            <input type="radio" name="storyType" value="column" id="reset" />
-            <span>🌎<br></br>All</span>
+          <label className={`btn reset`}>
+            <input type="radio" name="" value="" id="all" onClick={e => { setClicked("all") }} />
+            <span style={{ backgroundColor: clicked === "all" ? "#edcf2e" : '#f6f4e6' }}>🌎<br></br>All</span>
           </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="app" id="design" />
-            <span>🎨<br></br>Design</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="graphics" id="graphics" />
-            <span>🗺<br></br>Graphics</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="data" id="data" />
-            <span>📈<br></br>Data-driven</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="app" id="app" />
-            <span>🖥<br></br>News app</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="app" id="docs" />
-            <span>📖<br></br>Docs</span>
-          </label>
-          <label className="btn">
-            <input type="radio" name="storyType" value="text" id="text" />
-            <span>✍️<br></br>Written</span>
-          </label>
+          {categories.map((cat, ind) =>
+          (<label className={`btn ${cat.class}`} key={ind}>
+            <input type="radio" name="" value="" id={cat.class} onClick={e => { setClicked(cat.class) }} />
+            <span style={{ backgroundColor: cat.class === clicked ? "#edcf2e" : '#f6f4e6' }}>🌎<br></br>{cat.topic}</span>
+          </label>))}
         </p>
       </fieldset>
       <div className="layout">
-        {data.map((d, i) => (
+        {data.filter(d => (clicked === "all" ? d : d.storyType.includes(clicked))).map((d, i) => (
           <div className={`story ${d.storyType}`} key={i}>
             <a href={d.url} rel="noreferrer" target="_blank">
               <p className="story-tools">🧰 {d.tools}</p>
