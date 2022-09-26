@@ -41,7 +41,7 @@ const Hero = props => {
                         return instance;
                     }}
                 /></span></p>
-            <p>Currently, I work on the news design team at The Washington Post, where I build rich, highly customized interactive storytelling experiences, web apps and digital products.</p>
+            <p>Currently, I work on the news design team at The Washington Post, where I build rich, highly customized interactive storytelling experiences and web apps.</p>
 
             <p>Previosuly, I was a data reporting fellow at the Howard Center for Investigative Journalism at the University of Maryland, and have interned at NBC News on the data and graphics team. My code contributions on GitHub in the last year look like this <Sparklines data="https://raw.githubusercontent.com/aadittambe/dot-com-two-point-o/main/gh-contribs/contribs.json" />.</p>
             <p>If you like to keep up with current events and care about the news — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!</p>
