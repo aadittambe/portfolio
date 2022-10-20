@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../styles/Experience.css";
-const data = require("../data/stories.json");
 
-function Experience() {
+function Experience(props) {
+
+  const { data } = props
+  const stories = data.stories
 
   const categories = [{ topic: "Design", class: "design", emoji: "🎨" }, { topic: "Graphics", class: "graphics", emoji: "📊" }, { topic: "Data-driven", class: "data", emoji: "📈" }, { topic: "News app", class: "app", emoji: "🖥" }, { topic: "Docs", class: "docs", emoji: "📖" }, { topic: "Written", class: "text", emoji: "✍️" }]
 
@@ -27,13 +29,13 @@ function Experience() {
           {categories.map((cat, ind) =>
           (<label className={`btn ${cat.class}`} key={ind}>
             <input type="radio" name="" value="" id={cat.class} onClick={e => { setClicked(cat.class) }} />
-            <span style={{ backgroundColor: cat.class === clicked ? "#edcf2e" : '#f6f4e6' }}>🌎<br></br>{cat.topic}</span>
+            <span style={{ backgroundColor: cat.class === clicked ? "#edcf2e" : '#f6f4e6' }}>{cat.emoji}<br></br>{cat.topic}</span>
           </label>))}
         </p>
       </fieldset>
       <div className="layout">
-        {data.filter(d => (clicked === "all" ? d : d.storyType.includes(clicked))).map((d, i) => (
-          <div className={`story ${d.storyType}`} key={i}>
+        {stories.filter(d => (clicked === "all" ? d : d.storyType.includes(clicked))).map((d, i) => {
+          return <div className={`story ${d.storyType}`} key={i}>
             <a href={d.url} rel="noreferrer" target="_blank">
               <p className="story-tools">🧰 {d.tools}</p>
               <img
@@ -46,7 +48,8 @@ function Experience() {
 
             </a>
           </div>
-        ))}
+        }
+        )}
       </div>
       <div className="source ital"><p>I am a supporter of open-source code — the source code for this website is available on <a href="https://github.com/aadittambe/dot-com-two-point-o">GitHub</a>.</p></div>
     </main >
