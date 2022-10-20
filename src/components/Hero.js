@@ -45,8 +45,8 @@ const Hero = props => {
                 /></span></p>
 
             {intro.map((text, index) => (
-                index === 1 ? <p>{text} <Sparklines />.</p> :
-                    <p>{text}</p>
+                index === 1 ? <p key={index}>{text} <Sparklines />.</p> :
+                    <p key={index}>{text}</p>
             ))}
             <a href='https://twitter.com/aadittambe/' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
