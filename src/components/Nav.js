@@ -7,7 +7,8 @@ import Hero from './Hero'
 
 import '../styles/Nav.css'
 
-function Nav() {
+function Nav(props) {
+    const { data } = props
 
     return (
         <>
@@ -28,9 +29,9 @@ function Nav() {
             </header>
             <Routes>
                 <Route path='*' element={<Navigate to="/" replace />} />
-                <Route path='/' element={<Hero />} />
-                <Route path='/experience' element={<Experience />} />
-                <Route path='/resume' element={<Resume />} />
+                <Route path='/' element={<Hero data={data} />} />
+                <Route path='/experience' element={<Experience data={data} />} />
+                <Route path='/resume' element={<Resume data={data} />} />
             </Routes>
         </>
         // <div className='nav'>

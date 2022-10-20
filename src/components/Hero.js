@@ -1,15 +1,17 @@
 import React from 'react'
-
 import '../styles/Hero.css'
 import TypeIt from "typeit-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-
 import Sparklines from '../components/Sparklines'
 
 const Hero = props => {
+
+    const { data } = props
+
+    const intro = data.intro
 
     return (
 
@@ -41,10 +43,11 @@ const Hero = props => {
                         return instance;
                     }}
                 /></span></p>
-            <p>Currently, I work on the news design team at The Washington Post, where I build rich, highly customized interactive storytelling experiences and web apps.</p>
 
-            <p>Previosuly, I was a data reporting fellow at the Howard Center for Investigative Journalism at the University of Maryland, and have interned at NBC News on the data and graphics team. My code contributions on GitHub in the last year look like this <Sparklines data="https://raw.githubusercontent.com/aadittambe/dot-com-two-point-o/main/gh-contribs/contribs.json" />.</p>
-            <p>If you like to keep up with current events and care about the news — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!</p>
+            {intro.map((text, index) => (
+                index === 1 ? <p>{text} <Sparklines />.</p> :
+                    <p>{text}</p>
+            ))}
             <a href='https://twitter.com/aadittambe/' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
             </a>

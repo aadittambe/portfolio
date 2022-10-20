@@ -6,13 +6,15 @@ import Footer from './Footer'
 // import Resume from './Resume'
 
 import '../styles/Main.css'
+const data = require("../data/data.json");
+
 
 
 function Main() {
     return (
         <>
             {/* <div id='container'> */}
-            <Nav />
+            <Nav data={data} />
             <Footer />
             {/* </div> */}
         </>

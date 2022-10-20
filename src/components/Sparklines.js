@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 import '../styles/Hero.css'
 
 const Sparklines = props => {
-    const { data } = props
+    const data = "https://raw.githubusercontent.com/aadittambe/dot-com-two-point-o/main/gh-contribs/contribs.json"
     d3.json(data).then(function (json) {
         // console.log(json);
         var content = json.data.user.contributionsCollection.contributionCalendar.weeks
