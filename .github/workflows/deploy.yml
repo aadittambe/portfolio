@@ -23,16 +23,4 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build
-      run: npm run build
-
-    - name: Get latest to deploy
-      uses: actions/checkout@v2
-    
-    - name: Deploy files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: aadittambe.com
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: "build/"
-        server-dir: "public_html/"
+      run: npm run deploy
