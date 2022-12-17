@@ -24,7 +24,7 @@ jobs:
       run: |
         touch .env
         echo FTP_USERNAME=${{ secrets.FTP_USERNAME }} >> .env
-        echo FTP_USERNAME=${{ secrets.FTP_PASSWORD }} >> .env
+        echo FTP_PASSWORD=${{ secrets.FTP_PASSWORD }} >> .env
 
     - name: Install dependencies
       run: npm install
