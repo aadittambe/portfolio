@@ -25,3 +25,18 @@ jobs:
 
     - name: Build
       run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: aadittambe.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: "build/"
+        server-dir: "public_html/"
