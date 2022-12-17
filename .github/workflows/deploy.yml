@@ -19,6 +19,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    
+    - name: create env file
+      run: |
+        touch .env
+        echo FTP_USERNAME=${{ secrets.FTP_USERNAME }} >> .env
+        echo FTP_USERNAME=${{ secrets.FTP_PASSWORD }} >> .env
 
     - name: Install dependencies
       run: npm install
