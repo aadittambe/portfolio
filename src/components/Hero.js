@@ -3,7 +3,7 @@ import '../styles/Hero.css'
 import TypeIt from "typeit-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faMastodon, faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Sparklines from '../components/Sparklines'
 
@@ -50,6 +50,9 @@ const Hero = props => {
             ))}
             <a href='https://twitter.com/aadittambe/' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
+            </a>
+            <a href='https://vis.social/@aadittambe' rel="noreferrer" target="_blank">
+                <FontAwesomeIcon className="icon" icon={faMastodon} size='2x' />
             </a>
             <a href='https://github.com/aadittambe' rel="noreferrer" target="_blank">
                 <FontAwesomeIcon className="icon" icon={faGithubAlt} size='2x' />
