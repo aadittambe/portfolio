@@ -5,7 +5,7 @@ import Experience from './Experience'
 import Resume from './Resume'
 import Hero from './Hero'
 
-import '../styles/Nav.css'
+import '../styles/Nav.scss'
 
 function Nav(props) {
     const { data } = props

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Hero.css'
+import '../styles/Hero.scss'
 import TypeIt from "typeit-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'

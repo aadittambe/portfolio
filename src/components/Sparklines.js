@@ -1,6 +1,6 @@
 import React from 'react';
 import * as d3 from 'd3'
-import '../styles/Hero.css'
+import '../styles/Hero.scss'
 
 const Sparklines = props => {
     const data = "https://raw.githubusercontent.com/aadittambe/portfolio/main/gh-contribs/contribs.json"

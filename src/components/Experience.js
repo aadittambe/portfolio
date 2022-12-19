@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Experience.css";
+import "../styles/Experience.scss";
 
 function Experience(props) {
 

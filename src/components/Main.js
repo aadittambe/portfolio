@@ -5,7 +5,7 @@ import Footer from './Footer'
 // import Experience from './Experience'
 // import Resume from './Resume'
 
-import '../styles/Main.css'
+import '../styles/Main.scss'
 const data = require("../data/data.json");
 
 

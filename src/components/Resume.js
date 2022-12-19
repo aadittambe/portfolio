@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Resume.css'
+import '../styles/Resume.scss'
 import Pdf from '../docs/AaditTambe_Resume.pdf';
 
 function Resume(props) {
