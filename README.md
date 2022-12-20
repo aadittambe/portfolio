@@ -25,14 +25,14 @@ npm run start
 ```
 
 ## 🛠️ Build site
-A [GitHub Action](https://github.com/aadittambe/portfolio/blob/main/.github/workflows/deploy.yml) automatically builds (and deploys the site to my FTP server) when changes to this repository are pushed to GitHub. So all you However, to manually build it for local testing, run:
+A [GitHub Action](https://github.com/aadittambe/portfolio/blob/main/.github/workflows/deploy.yml) automatically builds (and deploys the site to my FTP server) when changes to this repository are pushed to GitHub (on the `main` branch). However, to manually build it for local testing, run:
 ```
 npm run build
 ```
 
 ## 🪖 Deploy site
 
-The same GitHub Action mentioned in the earlier step deploys it to my FTP server with `ftp-deploy` when changes are pushed. However, to manually deploy, you can run: 
+The same GitHub Action mentioned in the earlier step deploys it to my FTP server with `ftp-deploy` when changes are pushed to the `main` branch. However, to manually deploy, you can run: 
 ```
 npm run deploy
 ```
