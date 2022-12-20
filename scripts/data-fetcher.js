@@ -38,4 +38,6 @@ function init() {
     next();
 }
 
+console.log('Downloaded latest data.')
+
 init();
