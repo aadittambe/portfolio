@@ -1,4 +1,4 @@
-name: get contributions
+name: Get contributions
 
 on:
   schedule:

@@ -1,4 +1,4 @@
-name: Deploy
+name: Build and deploy site
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     
-    - name: create env file
+    - name: Create env file
       run: |
         touch .env
         echo FTP_USERNAME=${{ secrets.FTP_USERNAME }} >> .env
